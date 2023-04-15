@@ -14,13 +14,21 @@ An ego vehicle following a virtual lead vehicle planned route is an essential co
 <br />
 
 ## FollowMe dataset
-The raw files are in folder ```processed```. 
-The dataset is in file ```dataset.py```, this folder represents the dataset in a suitable format for training and testing. 
+<div align='center'>
+<img style="width: 60vw; height: auto;"  src="images/FollowMeDataset.png"></img>
+</div>
+<br />
+The raw files are in folder ```processed```. <br />
+The dataset loader is in file ```dataset.py```, this folder represents the dataset in a suitable format for training and testing. 
 
-## Training & Testing,  FollowMe-STGCNN Model
-To train the model check ```train.sh``. 
-Typically you need to pass the ```--pred_time ```  to either 30,50,80 indicating a different prediction horizon. 
-To test the model check ```test.sh```. All it needs is to pass the folder of the checkpoint and it will produce all the metrics used in the paper ADE, FDE, AMD, AMV & KDE. 
+## FollowMe-STGCNN Model: Training & Testing  
+<div align='center'>
+<img style="width: 60vw; height: auto;"  src="images/FollowMe_STGCNN.png"></img>
+</div>
+<br />
+To train the model check ```train.sh```. <br />
+Typically you need to pass the ```--pred_time ```  to either 30,50,80 indicating a different prediction horizon. <br />
+To test the model check ```test.sh```. All it needs is to pass the folder of the checkpoint and it will produce all the metrics used in the paper ADE, FDE, AMD, AMV & KDE. <br />
 The test script uses the checkpoint reported in our paper.
 
 ## Structure 
